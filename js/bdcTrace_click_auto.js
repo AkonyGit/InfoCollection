@@ -1,7 +1,7 @@
 (function(){
-	//var page_click_collect1_sendUrl = "http://trace.hexun.com/bdcTrace/bdcTraceClick.gif?";
+	//var page_click_collect1_sendUrl = "http://trace.hexun.com/bdcTrace/*.gif?";
 	var bdcTrace_request_url = "https://trace.hexun.com";
-	var page_click_collect_sendUrl = bdcTrace_request_url + "/bdcTrace/bdcTraceClick.gif?";
+	var page_click_collect_sendUrl = bdcTrace_request_url + "/bdcTrace/*.gif?";
 	//-------------------------------下面监听点击超链接事件-----------------------------------------
 	function BdcTraceClickAddLinkClickEvent() {
 		var objsLink = document.getElementsByTagName("a");
