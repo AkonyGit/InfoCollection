@@ -1,11 +1,11 @@
 //-------------------全局变量，用于保存页面中获得的所有信息---------------------------------
 /*str中只存静态信息，譬如url，各种id，分辨率、ip，打开时间、关闭时间等等；--获取的动态信息另定义变量取str的值，再进行操作，这样保证此次的记录不会遗留上次的动态信息 */
 var strjson = {};
-//var ip = "https://trace.hexun.com/bdcTrace/restjs?" 
-var ip = "https://trace.hexun.com/bdcTrace/restjs?";
-var ipGif = "https://trace.hexun.com/bdcTrace/pageload.gif?";
-//var ip = "https://trace.hexun.com/bdcTrace/restjs.gif?"
-//var ipPost = "https://trace.hexun.com/bdcTrace/restjsPost?";
+//var ip = "https://trace.hexun.com/bdcTrace/*?" 
+var ip = "https://trace.hexun.com/bdcTrace/*?";
+var ipGif = "https://trace.hexun.com/bdcTrace/*.gif?";
+//var ip = "https://trace.hexun.com/bdcTrace/*.gif?"
+//var ipPost = "https://trace.hexun.com/bdcTrace/*?";
 	//-------------------下面获取PageOpenTime---------------------------------
 strjson.pageOpenTime = CurentTime();
 
