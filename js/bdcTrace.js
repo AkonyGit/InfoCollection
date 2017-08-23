@@ -3,11 +3,11 @@
 /*str中只存静态信息，譬如url，各种id，分辨率、ip，打开时间、关闭时间等等；--获取的动态信息另定义变量取str的值，再进行操作，这样保证此次的记录不会遗留上次的动态信息 */
 var strjson = {};
 var bdcTrace_request_url = "https://trace.hexun.com";
-//var ip = "https://trace.hexun.com/bdcTrace/restjs?" 
-//var ip = hostConfig + "/bdcTrace/restjs?";
-var ipGif = bdcTrace_request_url+"/bdcTrace/pageload.gif?";
-//var ip = "https://trace.hexun.com/bdcTrace/restjs.gif?"
-//var ipPost = "https://trace.hexun.com/bdcTrace/restjsPost?";
+//var ip = "https://trace.hexun.com/bdcTrace/*?" 
+//var ip = hostConfig + "/bdcTrace/*?";
+var ipGif = bdcTrace_request_url+"/bdcTrace/*.gif?";
+//var ip = "https://trace.hexun.com/bdcTrace/*.gif?"
+//var ipPost = "https://trace.hexun.com/bdcTrace/*?";
 	//-------------------下面获取PageOpenTime---------------------------------
 strjson.pageopentime = CurentTime();
 
