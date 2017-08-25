@@ -6,9 +6,10 @@
 
 	var hx_bdcTrace_projectid = "DSP_HX_T**";
 	(function(){
-		var arr = ['bdcTrace.js','js/bdcTrace_click_auto.js'];
+		var arr = ['//trace.hexun.com/bdcTrace/js/*.min.js','//trace.hexun.com/bdcTrace/js/*.min.js'];
 		for(var i=0;i<arr.length;i++){
 			var hx = document.createElement('script'); hx.type='text/javascript';
+			arr[i] = (document.location.protocol == 'https:' ? 'https:' : 'http:') + arr[i];//判断页面协议
 			hx.src = arr[i];
 			var s = document.getElementsByTagName('head')[0]; s.parentNode.insertBefore(hx,s);
 		}
